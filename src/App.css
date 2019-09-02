@@ -1,0 +1,71 @@
+/* App CSS file */
+
+main {
+  display: block;
+}
+
+/* Explicitly set map height to define div element containing the map */
+#map {
+  object-fit: cover;
+}
+
+#list {
+  background-color: thistle;
+}
+
+#title {
+  margin: 20px auto;
+  text-align: center;
+}
+
+#search {
+  height: 2rem;
+  font-size: 1rem;
+  margin: 20px auto;
+}
+
+/* Optional: Makes the page fill the window. */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h6 {
+  font-family: 'Cinzel', serif;
+}
+
+h2, .card-subtitle {
+  font-family: 'Bellefair', serif;  
+}
+
+button {
+  margin: 0 5px;
+}
+
+.listItem:last-child hr {
+  display: none;
+}
+.pointer {
+  cursor: pointer;
+}
+
+.icon {
+  color: rgb(75, 47, 75);
+}
+
+@media (max-width: 575px) {
+  #map {
+    height: 100vh;
+  }
+}
+
+@media (min-width: 992px) {
+  html {
+    font-size: 1.1rem;
+  }
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
